@@ -28,11 +28,13 @@
 
     input {
       margin-right: 7px;
-      stroke-width: 1.5px;
-      stroke: #005981;
       width: 16px;
       height: 16px;
       border-radius: 50%;
+    }
+
+    input:checked + span {
+      text-decoration: line-through;
     }
   }
 
