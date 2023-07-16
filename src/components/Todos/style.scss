@@ -1,0 +1,72 @@
+.todos {
+  position: relative;
+  z-index: 1;
+  //   margin-top: 109px;
+  flex-direction: column;
+  width: 100%;
+  background: #f7f7f7;
+  padding: 38px 82px 10px 87px;
+  height: 82%;
+  color: #000000;
+
+  ul {
+    list-style: none;
+  }
+
+  .todo {
+    width: 100%;
+    height: 54px;
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .todo-left-wrapper {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+
+    input {
+      margin-right: 7px;
+      stroke-width: 1.5px;
+      stroke: #005981;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+  }
+
+  .todo-right-wrapper {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    justify-content: space-evenly;
+
+    .button-blue {
+      width: 46px;
+      height: 25px;
+      border-radius: 27px;
+      color: #fff;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      background: #005981;
+    }
+
+    .todo-delete {
+      width: 34px;
+      height: 34px;
+      background-color: #d4a656;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      padding: 5px;
+    }
+  }
+}
