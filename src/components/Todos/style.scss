@@ -1,16 +1,10 @@
 .todos {
-  position: relative;
-  z-index: 1;
-  //   margin-top: 109px;
-  flex-direction: column;
   width: 100%;
-  background: #f7f7f7;
-  padding: 38px 82px 10px 87px;
-  height: 82%;
-  color: #000000;
 
   ul {
     list-style: none;
+    overflow-y: auto;
+    height: 385px;
   }
 
   .todo {
@@ -21,6 +15,7 @@
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
     margin-top: 20px;
     display: flex;
+    justify-content: space-between;
   }
 
   .todo-left-wrapper {
@@ -29,6 +24,7 @@
     align-items: center;
     justify-content: start;
     padding-left: 10px;
+    overflow: hidden;
 
     input {
       margin-right: 7px;
@@ -67,6 +63,17 @@
       border: none;
       outline: none;
       padding: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .todos {
+    .todo-left-wrapper {
+      width: 45%;
+    }
+    .todo-right-wrapper {
+      width: 50%;
     }
   }
 }

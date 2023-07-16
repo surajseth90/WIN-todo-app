@@ -1,8 +1,6 @@
-import Logo from "../../assets/images/logo.svg";
-import AddTodoIcon from "../../assets/images/add-list-icon.svg";
-
 import "./style.scss";
 import { useEffect, useState } from "react";
+import Logo from "../../assets/images/logo.svg";
 
 function Header(props) {
   const [userData, setUserData] = useState({});
@@ -25,10 +23,13 @@ function Header(props) {
           <img className="header-logo" src={Logo} />
         </div>
         <div className="header-right-container">
-          <button
-            className="header-add-item"
-            onClick={() => props.setScreen(2)}
-          ></button>
+          <div className="header-add-btn-container">
+            <button
+              className="header-add-item"
+              onClick={() => props.setScreen(2)}
+            ></button>
+          </div>
+
           <div className="header-user-profile">
             <img
               className="header-user-image"

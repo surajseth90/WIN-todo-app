@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Inter;
 }
 
 html,
@@ -24,7 +27,6 @@ body,
 .main-container {
   position: relative;
   z-index: 1;
-  //   margin-top: 109px;
   flex-direction: column;
   width: 100%;
   background: #f7f7f7;
@@ -41,5 +43,17 @@ button {
   :disabled {
     cursor: auto;
     pointer-events: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    padding: 38px 20px 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  img {
+    transform: scale(0.7) !important;
   }
 }

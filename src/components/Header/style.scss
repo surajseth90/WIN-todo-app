@@ -68,3 +68,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .header .header-wrapper .header-right-container {
+    .header-user-profile {
+      width: 50%;
+    }
+    .header-add-btn-container {
+      width: 20%;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header .header-wrapper .header-right-container {
+    .header-user-profile {
+      width: 80%;
+    }
+  }
+}
